@@ -6,6 +6,7 @@ The overall aim is to develop and test a range of assessment models and methods 
 
 Laurence Kell <<laurie@kell.es>>, Coilin Minto <<coilin.minto@gmit.ie>> 
 
+All data etc are avialble via https://drive.google.com/open?id=1WfthxhdBgZfPg_lrUkpKzwRQHe61RBgK
 # Tasks
 
 [**1:** Stock Prioritisation](https://github.com/flr/mydas/wiki/1-Stock-prioritisation)
