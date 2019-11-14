@@ -168,7 +168,7 @@ uDev =FLife:::rlnoise(nits,stock.n(om)[,,,,,1]%=%0,0.2,b=0.0)</code></pre>
 </div>
 <div id="empirical-mse-which-is-model-free---derivative-based" class="section level1">
 <h1>Empirical mse which is model-free - Derivative based</h1>
-<p>MSE for Derivate empirical MP A derivative control rule (D) is so called as the control signal is derived from the trend in the signal, i.e. to the derivative of the error. A more in depth description can be found here <a href="https://github.com/laurieKell/equations/blob/master/tex/mp.pdf" class="uri">https://github.com/laurieKell/equations/blob/master/tex/mp.pdf</a> For example the hyperparameters (gain parameters) k1 and k2… the hcr works if stock increases increase k2, if stock declines increase k1 the k1 and k2 can take a range of values gamma actions asymmetry so that decreases in the stock index do not result in the same relative change as as an increase.</p>
+<p>MSE for Derivate empirical MP A derivative control rule (D) is so called as the control signal is derived from the trend in the signal, i.e. to the derivative of the error. A more in depth description can be found here <a href="https://github.com/flr/equations/blob/master/tex/mp.pdf" class="uri">https://github.com/flr/equations/blob/master/tex/mp.pdf</a> For example the hyperparameters (gain parameters) k1 and k2… the hcr works if stock increases increase k2, if stock declines increase k1 the k1 and k2 can take a range of values gamma actions asymmetry so that decreases in the stock index do not result in the same relative change as as an increase.</p>
 <pre class="{r}"><code>mse2 =mydas:::mseSBTD(om,eq,control=c(k1=0.25,k2=0.5,gamma=1),start=55,end=100, srDev = srDev, uDev = uDev)</code></pre>
 </div>
 

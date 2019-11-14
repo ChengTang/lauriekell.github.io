@@ -49,11 +49,11 @@ Provide examples of the methods in **FLife** to
 
 ### Workplan
 
-+ Set up an [OMs](https://github.com/laurieKell/mydas/tree/master/papers/black-box/R/om.pdf) with biological processes based on **FLife** 
-+ Create an [Observation Error Model](https://github.com/laurieKell/mydas/tree/master/papers/black-box/R/oem.pdf) to mimic different types of data collecting regimes
-+ Implement a variety of [MP](https://github.com/laurieKell/mydas/tree/master/papers/black-box/R/mse-run.pdf), i.e. age, biomass and indicator based
-+ Agree [scenarios](https://github.com/laurieKell/mydas/tree/master/papers/black-box/R/scenarios.pdf).
-+ Compare the [performance](https://github.com/laurieKell/mydas/tree/master/papers/black-box/R/smmry.pdf) of MPs
++ Set up an [OMs](https://github.com/flr/mydas/tree/master/papers/black-box/R/om.pdf) with biological processes based on **FLife** 
++ Create an [Observation Error Model](https://github.com/flr/mydas/tree/master/papers/black-box/R/oem.pdf) to mimic different types of data collecting regimes
++ Implement a variety of [MP](https://github.com/flr/mydas/tree/master/papers/black-box/R/mse-run.pdf), i.e. age, biomass and indicator based
++ Agree [scenarios](https://github.com/flr/mydas/tree/master/papers/black-box/R/scenarios.pdf).
++ Compare the [performance](https://github.com/flr/mydas/tree/master/papers/black-box/R/smmry.pdf) of MPs
 
 ## Comparison of data rich and data poor indicators
 

@@ -13,15 +13,15 @@ These data will be used to parameterise the assessment models, condition OMs and
 In addition the results from the MSE will be stored in the database and will be able to be queried using a shiny-app. 
 
 ### Datasets
-[Commercial](      https://github.com/laurieKell/mydas/wiki/2.1-Commercial)
+[Commercial](      https://github.com/flr/mydas/wiki/2.1-Commercial)
 
-[Surveys](         https://github.com/laurieKell/mydas/wiki/2.2-Survey)
+[Surveys](         https://github.com/flr/mydas/wiki/2.2-Survey)
 
-[Life history](    https://github.com/laurieKell/mydas/wiki/2.3-Biological)
+[Life history](    https://github.com/flr/mydas/wiki/2.3-Biological)
 
-[Stock Assessment](https://github.com/laurieKell/mydas/wiki/2.4-Assessment)
+[Stock Assessment](https://github.com/flr/mydas/wiki/2.4-Assessment)
 
-[Economic](        https://github.com/laurieKell/mydas/wiki/2.5-Economic)
+[Economic](        https://github.com/flr/mydas/wiki/2.5-Economic)
 
 ## Shiny application
 

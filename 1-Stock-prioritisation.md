@@ -7,7 +7,7 @@ To help with prioritisation a Productivity Susceptibility Analysis was conducted
 [shiny application](http://35.177.86.42:3838/mydas/), 
 user: mydas, pwd:gmit1
 
-Estimates of [productivity](https://github.com/laurieKell/mydas/blob/master/tasks/task1/R/productivity.pdf) and [catchability](https://github.com/laurieKell/mydas/blob/master/tasks/task1/R/q.pdf)
+Estimates of [productivity](https://github.com/flr/mydas/blob/master/tasks/task1/R/productivity.pdf) and [catchability](https://github.com/flr/mydas/blob/master/tasks/task1/R/q.pdf)
   
 + Mollusc: North Irish Sea razor clam: Contact: Oliver Tully, Yves Reecht
 + Crustacean: West and south coast lobster: Contact: Oliver Tully, Yves Reecht

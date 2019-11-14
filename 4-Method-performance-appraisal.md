@@ -22,14 +22,14 @@ Basing an OM on the current assessment model has arguably the lowest demands for
 
 ### Life History
 
-Life history relationships based on ecological theory were used to condition Operating Models using the [methods](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/FLife-OM.pdf) in the FLife package for [Brill](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/brill.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/brill.Rmd); 
-[Turbot](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/turbot.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/turbot.Rmd); [Rays](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/ray.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/ray.Rmd); 
-[Sprat](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/sprat.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/sprat.Rmd); [Pollack](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/pollack.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/pollack.Rmd);
-[Razors clams](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/razor.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/razor.Rmd); and [Lobsters](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/lobsters.pdf), [(source)](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/lobsters.Rmd) 
+Life history relationships based on ecological theory were used to condition Operating Models using the [methods](https://github.com/flr/mydas/blob/master/tasks/task4/R/FLife-OM.pdf) in the FLife package for [Brill](https://github.com/flr/mydas/blob/master/tasks/task4/R/brill.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/brill.Rmd); 
+[Turbot](https://github.com/flr/mydas/blob/master/tasks/task4/R/turbot.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/turbot.Rmd); [Rays](https://github.com/flr/mydas/blob/master/tasks/task4/R/ray.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/ray.Rmd); 
+[Sprat](https://github.com/flr/mydas/blob/master/tasks/task4/R/sprat.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/sprat.Rmd); [Pollack](https://github.com/flr/mydas/blob/master/tasks/task4/R/pollack.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/pollack.Rmd);
+[Razors clams](https://github.com/flr/mydas/blob/master/tasks/task4/R/razor.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/razor.Rmd); and [Lobsters](https://github.com/flr/mydas/blob/master/tasks/task4/R/lobsters.pdf), [(source)](https://github.com/flr/mydas/blob/master/tasks/task4/R/lobsters.Rmd) 
 
 
 ### Data Rich
-Take a stock assessment of a [data rich stock](https://github.com/laurieKell/mydas/blob/master/tasks/task2/R/task2-stock-assessments.pdf) and create an Observation Error Model (OEM) that mimics the properties of a data poor dataset.
+Take a stock assessment of a [data rich stock](https://github.com/flr/mydas/blob/master/tasks/task2/R/task2-stock-assessments.pdf) and create an Observation Error Model (OEM) that mimics the properties of a data poor dataset.
 
 ### Alternative OMs
 
@@ -53,7 +53,7 @@ The assessment methods chosen for testing, reflect a range of data and knowledge
 
 ### Knowledge requirements
 
-Stock assessment methods commonly require choices to be made for difficult to estimate parameters, there a set of [priors and fixed](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/priors.pdf) parameters for the methods in the google spreadsheet were generated. These include values for
+Stock assessment methods commonly require choices to be made for difficult to estimate parameters, there a set of [priors and fixed](https://github.com/flr/mydas/blob/master/tasks/task4/R/priors.pdf) parameters for the methods in the google spreadsheet were generated. These include values for
 
 + Growth: *L<sub>infinty<sub>*, *k*, *t<sub>0<sub>*	
 + Length-weight relationship: a, b
@@ -85,4 +85,4 @@ Therefore prior to running the MSE in feedback mode the various candidate assess
 Once the cross tests are run the MSE can be run to evaluate the MPs. 
 
 Tests were performed for  
-[VPA](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/simtest-vpa.pdf), [Biomass dynamic](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/simtest-bd.pdf), [Biomass dynamic configured to use only catch data](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/simtest-bdsra.pdf) and [LBSPR](https://github.com/laurieKell/mydas/blob/master/tasks/task4/R/simtest-lbspr.pdf)
+[VPA](https://github.com/flr/mydas/blob/master/tasks/task4/R/simtest-vpa.pdf), [Biomass dynamic](https://github.com/flr/mydas/blob/master/tasks/task4/R/simtest-bd.pdf), [Biomass dynamic configured to use only catch data](https://github.com/flr/mydas/blob/master/tasks/task4/R/simtest-bdsra.pdf) and [LBSPR](https://github.com/flr/mydas/blob/master/tasks/task4/R/simtest-lbspr.pdf)

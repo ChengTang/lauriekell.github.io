@@ -9,7 +9,7 @@ library(devtools)
 
 install.packages(c("FLCore","FLFishery","FLasher","FLBRP","mpb","FLife"), repos="http://flr-project.org/R")
 devtools::install_github(c("flr/FLCore", "flr/FLFishery", "flr/mpb", "flr/kobe", "flr/diags"))
-devtools::install_github("lauriekell/mydas", subdir="pkgs/mydas")
+devtools::install_github("laurieKell/mydas", subdir="pkgs/mydas")
 ```
 
 # Quick Start
@@ -220,7 +220,7 @@ mse=mydas:::mseMPB(om,eq,mp,start=54,ftar=0.5,srDev=srDev,uDev=uDev)
 
 # Supplementary Material
 
-[equations](https://github.com/laurieKell/equations/blob/master/tex/mp.pdf)
+[equations](https://github.com/flr/equations/blob/master/tex/mp.pdf)
 
 # References 
 

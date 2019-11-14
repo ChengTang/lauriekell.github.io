@@ -29,11 +29,11 @@ FLife is a package for modelling  the relationships between life history traits 
 + []()
 
 ### Papers
-#### [MyDas](https://github.com/laurieKell/mydas/wiki/Papers])
-+ [FLife methods and implementation](https://github.com/laurieKell/mydas/wiki/Papers), MiEE.
+#### [MyDas](https://github.com/flr/mydas/wiki/Papers])
++ [FLife methods and implementation](https://github.com/flr/mydas/wiki/Papers), MiEE.
 
-#### [xval](https://github.com/laurieKell/xval/wiki)
-+ [Cross-validation](https://github.com/laurieKell/xval/wiki) of stock assessment and operating models
+#### [xval](https://github.com/flr/xval/wiki)
++ [Cross-validation](https://github.com/flr/xval/wiki) of stock assessment and operating models
 
 ## [FLasher](http://www.flr-project.org/FLasher)
 Review current status of as related to data-poor situations and links with FLife

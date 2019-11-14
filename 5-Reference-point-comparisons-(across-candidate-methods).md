@@ -1,6 +1,6 @@
 Once reference points have been identified, their performance will be evaluated through simple Management Strategy Evaluation (MSE).    
 
-Before conducting the MSE simulation tests were conducted to select the best performing methods identified under [Task 3](https://github.com/laurieKell/mydas/wiki/3-Method-and-simulation-framework-development-and-implementation). 
+Before conducting the MSE simulation tests were conducted to select the best performing methods identified under [Task 3](https://github.com/flr/mydas/wiki/3-Method-and-simulation-framework-development-and-implementation). 
 
 
 ## Stock Assessment Methods
@@ -17,7 +17,7 @@ The methods were run as part of a MP, i.e. for a set of pre-agreed data, choice 
  
 ## Operating Models
 
-OM conditioning was conducted using [FLife](https://github.com/laurieKell/mydas/blob/master/tasks/task5/R/FLife-OM.pdf) under Tasks [3](https://github.com/laurieKell/mydas/wiki/3-Method-and-simulation-framework-development-and-implementation) and [4](https://github.com/laurieKell/mydas/wiki/4-Method-performance-appraisal).
+OM conditioning was conducted using [FLife](https://github.com/flr/mydas/blob/master/tasks/task5/R/FLife-OM.pdf) under Tasks [3](https://github.com/flr/mydas/wiki/3-Method-and-simulation-framework-development-and-implementation) and [4](https://github.com/flr/mydas/wiki/4-Method-performance-appraisal).
 
 ###  Observation Error Model
 

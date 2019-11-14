@@ -8,7 +8,7 @@ When running an MSE control actions the MP are fed back into an Operating Model 
 
 To simulate the types of data used by the MP requires an Observation Error Model (OEM) to generates fishery-dependent and/or fishery-independent resource monitoring data.
 
-Examples of the MSE framework can be found in the [vignettes](https://github.com/laurieKell/mydas/blob/master/vignettes/mse/mse.pdf) and [task5](https://github.com/laurieKell/mydas/tree/master/tasks/task5/R)
+Examples of the MSE framework can be found in the [vignettes](https://github.com/flr/mydas/blob/master/vignettes/mse/mse.pdf) and [task5](https://github.com/flr/mydas/tree/master/tasks/task5/R)
 
 ## Assessment Methods
 

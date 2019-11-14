@@ -3,7 +3,7 @@ library(devtools)
 
 install.packages(c("FLCore","FLFishery","FLasher","FLBRP","mpb","FLife"), repos="http://flr-project.org/R")
 devtools::install_github(c("flr/FLCore", "flr/FLFishery", "flr/mpb", "flr/kobe", "flr/diags"))
-devtools::install_github("lauriekell/mydas", subdir="pkgs/mydas")
+devtools::install_github("flr/mydas", subdir="pkgs/mydas")
 
 ## ------------------------------------------------------------------------
 
