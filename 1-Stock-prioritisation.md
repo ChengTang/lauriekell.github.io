@@ -1,6 +1,4 @@
-A number of example species and stocks were identified. The prioritisation and final choice of stocks was based on economic value, importance to the ecosystem, sensitivity to the impacts of fishing, availablity of data and other risks such as vulnerability, data availability, and significant by-catch. 
-
-
+Initially number of example species and stocks were identified. The prioritisation and final choice of stocks was based on economic value, importance to the ecosystem, sensitivity to the impacts of fishing, availablity of data and other risks such as vulnerability, data availability, and significant by-catch. 
 
 To help with prioritisation a Productivity Susceptibility Analysis was conducted, following which 6 case studies were selected 
 
