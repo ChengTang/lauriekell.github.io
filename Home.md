@@ -108,7 +108,7 @@ The parameters can then be used by `lhEql` to simulate equilibrium dynamics by c
 ```{r}
 eq=lhEql(par)
 
-plot(eq)
+plot(eq,refpts="msy")
 ```
 
 To model time series the FLBRP object created by lhEql is coerced to an FLStock object and then [projected forward](https://www.flr-project.org/doc/Forecasting_on_the_Medium_Term_for_advice_using_FLasher.html)
