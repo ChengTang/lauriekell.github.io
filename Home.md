@@ -61,4 +61,99 @@ Plotting is done using `ggplot2` which provides a powerful alternative paradigm 
 
 The `ggplot` functions expects a `data.frame` for its first argument, `data`; then a geometric object `geom` that specifies the actual marks put on to a plot and an aesthetic that is "something you can see" have to be provided. Examples of geometic Objects (geom) include points (geom_point, for scatter plots, dot plots, etc), lines (geom_line, for time series, trend lines, etc) and boxplot (geom_boxplot, for, well, boxplots!). Aesthetic mappings are set with the aes() function and, examples include, position (i.e., on the x and y axes), color ("outside" color), fill ("inside" color), shape (of points), linetype and size. 
 
+
+## Operating Model Conditioning using `FLife`
+
+### Life history parameters
+Get fishbase data
+```{r}
+load(url("https://github.com//fishnets//fishnets//blob//master//data//fishbase-web//fishbase-web.RData?raw=True"))
+```
+
+Select turbot as a case study
+```{r}
+lh=subset(fb,species=="Psetta maxima")
+
+names(lh)[c(14,17)] = c("l50","a50")
+lh=lh[,c("linf","k","t0","a","b","a50","l50")]
+
+head(lh)
+```
+
+Get the means and create an `FLPar` object
+```{r}
+lh=apply(lh,2,mean,na.rm=T)
+lh=FLPar(lh)
+```
+
+Values can be replace with any [better estimates](https://www.researchgate.net/publication/236650425_Ecological_and_economic_trade-offs_in_the_management_of_mixed_fisheries_A_case_study_of_spawning_closures_in_flatfish_fisheries) that may be available.
+
+`lhPar` fills in missing values using life history theory, while quantities like selection-at-age are set using defaults, in this case set to be the same as maturity-at-age.  
+
+
+```{r}
+?lhPar
+```
+
+```{r}
+par=lhPar(lh)
+par
+```
+
+The parameters are then be used by `lhEql` to simulate the equilibrium dynamics by combining the spawner/yield per recruit relationships with a stock recruitment relationship, by creating an [`FLBRP` object](https://www.flr-project.org/doc/Reference_points_for_fisheries_management_with_FLBRP.html)
+
+```{r}
+eq=lhEql(par)
+
+plot(eq)
+```
+
+To model time series the FLBRP object created by lhEql is coerced to an FLStock object and then [projected forward](https://www.flr-project.org/doc/Forecasting_on_the_Medium_Term_for_advice_using_FLasher.html)
+
+For example a fishing time series is simulated that represents a stock that was originally lightly exploited, then effort is increased until the stock is overfished and then fishing pressure was reduced to recover the stock biomass to BMSY.
+
+```{r}
+fbar(eq)=refpts(eq)["msy","harvest"]%*%FLQuant(c(rep(.1,19),
+                                              seq(.1,2,length.out = 30),
+                                              seq(2,1.0,length.out = 10),
+                                              rep(1.0,61)))[,1:105]
+plot(fbar(eq))
+```
+Coercing the FLBRP object into an FLStock
+
+```{r}
+om=as(eq,"FLStock")
+```
+We can simply plot the forward F projection catch, recruitment and biomass estimates etc..
+We call fwd() with the stock, the control object (fbar) and the stock recruitment relationship, and look at the results
+
+```{r}
+om=fwd(om,fbar=fbar(om)[,-1], sr=eq)
+```
+can change the units here also
+```{r}
+units(catch(om)) = units(discards(om)) = units(landings(om)) = units(stock(om)) = 'tonnes'
+units(catch.n(om)) = units(discards.n(om)) = units(landings.n(om)) = units(stock.n(om)) = '1000'
+units(catch.wt(om)) = units(discards.wt(om)) = units(landings.wt(om)) = units(stock.wt(om)) = 'kg'
+
+plot(om)
+```
+
+### Stochasticity 
+To add recruitment variability into add the residuals argument, e.g. for 100 Monte Carlo simulations with a CV of 0.3  
+```{r}
+nits=100
+srDev=rlnoise(nits, rec(om) %=% 0, 0.3)
+
+om=propagate(om,nits)
+
+om=fwd(om,fbar=fbar(om)[,-1], sr=eq, residuals=srDev)
+```
+
+```{r}
+plot(om)
+```
+
+
+
 ------------------------------
