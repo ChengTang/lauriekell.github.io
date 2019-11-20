@@ -1,6 +1,6 @@
 ![](emff-logo.jpg)
 
-The **MyDas** project simulation tested a range of assessment models and methods in order to establish Maximum Sustainable Yield (MSY), or proxy MSY reference points across the spectrum of data-limited stocks.  
+The **MyDas** project simulation tested a range of assessment models and methods in order to establish Maximum Sustainable Yield (MSY), or proxy MSY reference points across the spectrum of data-limited stocks. A main output of the project was the development of two R packages `mydas` and `FLife`, both are implemented as [FLR](http://www.flr-project.org/) packages. 
 
 **MyDas** was funded by the Irish exchequer and [EMFF 2014-2020](https://ec.europa.eu/fisheries/cfp/emff_en) 
 
@@ -9,8 +9,6 @@ The **MyDas** project simulation tested a range of assessment models and methods
 ------------------------------
 
 ## FLR
-
-Models are implemented as [FLR](http://www.flr-project.org/) packages and there are a variety of [vignettes](https://github.com/flr/mydas/wiki/mydas_vignettes) with examples, and datasets can be downloaded from [google drive](https://drive.google.com/open?id=1WfthxhdBgZfPg_lrUkpKzwRQHe61RBgK)
 
 The `mydas` package is part of [FLR](http://www.flr-project.org) family of R packages, a collection of tools for quantitative fisheries science, developed in the R language, that facilitates the construction of bio-economic simulation models of fisheries systems. 
 
@@ -23,7 +21,7 @@ install.packages(c("FLCore","FLFishery","FLasher","FLBRP","FLife","mydas"),
 
 A range of [tutorials](https://www.flr-project.org/doc/) are also available.
 
-If you want to install `mydas` from this GitHub repository then `devtools` needs to be installed
+The `mydas` package can be installed from this repository using `devtools` 
 
 ```{r}
 install.packages("devtools",dependencies=TRUE)
@@ -36,7 +34,6 @@ devtools::install_github("lauriekell/mydas-pkg")
 ```
 
 ## Libraries
-
 
 ```{r}
 library(plyr)
