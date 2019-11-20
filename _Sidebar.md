@@ -16,11 +16,11 @@
 
 # R Packages
 
-[mydas](https://github.com/flr/mydas-pkg/wiki)
+[mydas](https://github.com/flr/mydas)
 
-[FLife](https://github.com/flr/FLife/wiki/FLife)
+[FLife](https://github.com/flr/FLife)
 
-[mpb](https://github.com/flr/mpb/wiki/mpb)
+[mpb](https://github.com/flr/mpb)
 
 [Vignettes](https://github.com/flr/FLife/wiki/mydas-vignettes)
 
