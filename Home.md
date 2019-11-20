@@ -12,9 +12,9 @@ Models are implemented as [FLR](http://www.flr-project.org/) packages and there 
 
 To use `mydas` you will have to install a number of packages, both from [FLR](http://www.flr-project.org) and CRAN 
 
-## [FLR](http://www.flr-project.org/) 
+## FLR
 
-A variety of packages and [tutorials](https://www.flr-project.org/doc/) are available.
+A variety of packages and [tutorials](https://www.flr-project.org/doc/) are available from the [FLR website](http://www.flr-project.org/)
 
 ```{r}
 install.packages(c("FLCore","FLFishery","FLasher","FLBRP","FLife","mydas"), 
@@ -62,10 +62,11 @@ Plotting is done using `ggplot2` which provides a powerful alternative paradigm 
 The `ggplot` functions expects a `data.frame` for its first argument, `data`; then a geometric object `geom` that specifies the actual marks put on to a plot and an aesthetic that is "something you can see" have to be provided. Examples of geometic Objects (geom) include points (geom_point, for scatter plots, dot plots, etc), lines (geom_line, for time series, trend lines, etc) and boxplot (geom_boxplot, for, well, boxplots!). Aesthetic mappings are set with the aes() function and, examples include, position (i.e., on the x and y axes), color ("outside" color), fill ("inside" color), shape (of points), linetype and size. 
 
 
-## Operating Model Conditioning using `FLife`
+## Operating Model Conditioning 
 
 ### Life history parameters
-Get fishbase data
+
+Use 
 ```{r}
 load(url("https://github.com//fishnets//fishnets//blob//master//data//fishbase-web//fishbase-web.RData?raw=True"))
 ```
