@@ -160,7 +160,7 @@ plot(om)
 
 # Vignettes
 
-There are a variety of vignettes for `mydas` covering
+There are a variety of vignettes covering
 
 - Life history data [html](    https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_data.html)  [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_data.Rmd)
 
