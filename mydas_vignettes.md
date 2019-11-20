@@ -10,7 +10,7 @@ mydas is part of FLR, for an introduction visit the [tutorials](http://www.flr-p
 There are a variety of vignettes for `mydas` covering
 
 
-- Life histories data [html](mydas-.html) [pdf](mydas-.pdf) [source](mydas-.Rmd)
+- Life histories data [html](https://drive.google.com/open?id=1WfthxhdBgZfPg_lrUkpKzwRQHe61RBgK/mydas-data.html) [pdf](https://drive.google.com/open?id=1WfthxhdBgZfPg_lrUkpKzwRQHe61RBgK/mydas-data.pdf) [source]()
 
 - Use of `FLIfe` to simulate data poor stocks [html](mydas-.html) [pdf](mydas-.pdf) [source](mydas-.Rmd)
 
