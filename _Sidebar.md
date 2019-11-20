@@ -1,19 +1,19 @@
-- [Life history data](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_data.html)  [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_data.Rmd)
+- [Life history data](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_data.html)
 
-- [Use of `FLIfe` to simulate data poor stocks](http://www.flr-project.org/doc/Using_information_on_life_history_relationships.html) [source](https://github.com/flr/doc/blob/master/Life_history_relationships.Rmd)
+- [Use of `FLIfe` to simulate data poor stocks](http://www.flr-project.org/doc/Using_information_on_life_history_relationships.html) 
 
-- [Proxy Reference Points](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_proxies.html) [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_proxies.Rmd)
+- [Proxy Reference Points](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_proxies.html) 
 
-- [Operating Model Conditioning](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_conditioning.html) [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_conditioning.Rmd)
+- [Operating Model Conditioning](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_conditioning.html) 
 
-- [Observation Error Models](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_oem.html)  [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_oem.Rmd)
+- [Observation Error Models](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_oem.html)
 
-- [Simulation Testing Length Based Methods](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_length.html) [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_length.Rmd)
+- [Simulation Testing Length Based Methods](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_length.html)
 
-- [Simulation Testing Catch Based Methods](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_sra.html) [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_sra.Rmd)
+- [Simulation Testing Catch Based Methods](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_sra.html) 
 
-- [Management Strategy Evaluation](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_mse.html) [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_mse.Rmd)
+- [Management Strategy Evaluation](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_mse.html) 
 
-- [Summary Statistics](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_performance.html) [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_performance.Rmd)
+- [Summary Statistics](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_performance.html)
 
-- [Parallel computing](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_parallel.html)  [source](https://github.com/flr/mydas/blob/master/vignettes/mydas_parallel.Rmd)
+- [Parallel computing](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_parallel.html)
