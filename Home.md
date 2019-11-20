@@ -9,48 +9,50 @@ Models are implemented as [FLR](http://www.flr-project.org/) packages and there 
 **Contact:** [Laurence Kell](<laurie@kell.es>) and [Coilin Minto](<coilin.minto@gmit.ie>) 
 
 ------------------------------
+To follow these examples you will have to install a number of packages, either from CRAN or from [FLR](http://www.flr-project.org) where variety of packages and [tutorials](https://www.flr-project.org/doc/) are available.
 
-[**1:** Study Stocks](https://github.com/flr/mydas/wiki/1-Stock-prioritisation)
+Install FLR 
+```{r}
+install.packages(c("FLCore","FLFishery","FLasher","FLBRP","mpb","FLife"), 
+             repos="http://flr-project.org/R")
+```
 
-A number of example stocks were identified, the final list of stocks will be prioritised using criteria like: economic value of the stock; importance of the species to the ecosystem (key-stone species); sensitivity to the impacts of fishing; available data.
+`devtools` needs to be installed and then loaded so that the `mydas` package can be installed from this GitHub repository.
 
-[**2:** Datasets](https://github.com/flr/mydas/wiki/2-Data-collation)
+```{r}
+install.packages("devtools",dependencies=TRUE)
+```
 
-The project relies on existing data sets, however these data need to be collated in a usable form. Most datasets are available from the Marine Institute, or are publicly available, but others may only exist in other European labs/agencies.
+```{r}
+library(devtools)
 
-[**3:** Data Poor Methods](https://github.com/flr/mydas/wiki/3-Method-and-simulation-framework-development-and-implementation)
+devtools::install_github("lauriekell/mydas-pkg")
+```
 
-A number of data-limited methods exist. In order to compare the performance of these methods it would be useful to implement them all in the same framework, e.g. R. New methods may also be developed in the same framework.
+## Load Libraries
+```{r}
+library(plyr)
+library(reshape)
+library(ggplot2)
+```
 
-[**4:** Method Evaluation](https://github.com/flr/mydas/wiki/4-Method-performance-appraisal)
-Develop set of diagnostics that can be applied across range of models. Also assess the stability of the model, sensitivity to assumptions and bias in the advised catch.
+```{r}
+library(FLCore)
+library(FLasher)
+library(FLBRP)
+library(FLife)
+library(mydas)
+```
 
-[**5:** Reference point comparisons](https://github.com/flr/mydas/wiki/5-Reference-point-comparisons-(across-candidate-methods))
-Once reference points have been identified, their performance should be evaluated through simple management strategy evaluations.
+## Plotting
+```{r}
+library(ggplotFL)
+```
 
-[**6:** Collaboration](https://github.com/flr/mydas/wiki/6-Liaison-with-Marine-Institute)
+Plotting is done using `ggplot2` which provides a powerful alternative paradigm for creating both simple and complex plots in R using the ideas the [Grammar of Graphics](http://dx.doi.org/10.1007/978-3-642-21551-3_13). The idea of the grammar is to specify the individual building blocks of a plot and then to combine them to create the desired [graphic](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html).
 
-The main [outputs](https://github.com/flr/mydas/wiki/Outputs) are 
+`ggplotFL` implements a number of plots for the main `FLR` objects.
 
-+ Methods implemented as part of the FLR suite of R packages
-+ Peer review papers on
-     - Generic methods and
-     - Applications
+The `ggplot` functions expects a `data.frame` for its first argument, `data`; then a geometric object `geom` that specifies the actual marks put on to a plot and an aesthetic that is "something you can see" have to be provided. Examples of geometic Objects (geom) include points (geom_point, for scatter plots, dot plots, etc), lines (geom_line, for time series, trend lines, etc) and boxplot (geom_boxplot, for, well, boxplots!). Aesthetic mappings are set with the aes() function and, examples include, position (i.e., on the x and y axes), color ("outside" color), fill ("inside" color), shape (of points), linetype and size. 
 
-and the expected [outcomes](https://github.com/flr/mydas/wiki/Outputs)  are
-+ Management plans developed with ICES and others  
-
-The service provider is expected to meet on a regular basis with MI staff involved in the project:
-Monthly update meetings at the Marine Institute premises in Oranmore Galway with researcher providing the research services, 
-6-monthly progress reports and meetings at the Marine Institute with the researcher providing the research services and contract manager. 
-
-[Other projects](https://github.com/flr/mydas/wiki/7-Linkage-with-other-projects)
-The service provider is required to link research output to the following projects: 
-
-+ **The International Council of the Exploration of the Sea (ICES)** is in the process of developing methods to identify MSY proxy reference points for data-limited stocks ([WKLIFE](http://ices.dk/sites/pub/Publication%20Reports/Expert%20Group%20Report/Fisheries%20Resources%20Steering%20Group/2019/WKLIFEIX/WKLIFE_IX_2019.pdf)). The service provider is required to contribute to this process by proposing and testing new assessment models and methods of establishing reference points and will be expected to attend up to 4 one-week meetings at ICES headquarters in Copenhagen. However there are key differences with the ICES approach. Since this research contract will include stocks not currently assessed by ICES; focusing on the available data for each stock first and on the methods second; the ICES approach focuses on the methods first and then applies a limited number of methods to a large number of stocks.
-
-+ **Marine Institute** research and development on data poor stocks which includes the biology, stock dynamics and Management Strategy Evaluation (MSE) for Pollock.  It is expected that the service provider will collaborate closely with the team developing assessment methods for the pollock stock.
-
-+ **Galway Mayo Institute of Technology GMIT** had been awarded a Cullen fellowship for a PhD project on management strategy evaluation for monkfish. It is expected that the Cullen PhD and service provider will closely collaborate on tasks like data collation, assessment model implementation, simulation model development and management strategy evaluation. 
-
-
+------------------------------
