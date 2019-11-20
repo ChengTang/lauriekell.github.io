@@ -10,16 +10,18 @@ Models are implemented as [FLR](http://www.flr-project.org/) packages and there 
 
 ------------------------------
 
-To use `mydas` you will have to install a number of packages, both from [FLR](http://www.flr-project.org) and CRAN 
-
 ## FLR
 
-A variety of packages and [tutorials](https://www.flr-project.org/doc/) are available from the [FLR website](http://www.flr-project.org/)
+`mydas` is part of the [FLR](http://www.flr-project.org) family of R packages, a collection of tools for quantitative fisheries science, developed in the R language, that facilitates the construction of bio-economic simulation models of fisheries systems. 
+
+These can be [installed](http://www.flr-project.org/#install) from the website 
 
 ```{r}
 install.packages(c("FLCore","FLFishery","FLasher","FLBRP","FLife","mydas"), 
              repos="http://flr-project.org/R")
 ```
+
+A range of [tutorials](https://www.flr-project.org/doc/) are also available.
 
 If you want to install `mydas` from this GitHub repository then `devtools` needs to be installed
 
@@ -34,6 +36,7 @@ devtools::install_github("lauriekell/mydas-pkg")
 ```
 
 ## Libraries
+
 
 ```{r}
 library(plyr)
@@ -51,6 +54,7 @@ library(mydas)
 ```
 
 # Plotting
+
 ```{r}
 library(ggplotFL)
 ```
@@ -62,11 +66,12 @@ Plotting is done using `ggplot2` which provides a powerful alternative paradigm 
 The `ggplot` functions expects a `data.frame` for its first argument, `data`; then a geometric object `geom` that specifies the actual marks put on to a plot and an aesthetic that is "something you can see" have to be provided. Examples of geometic Objects (geom) include points (geom_point, for scatter plots, dot plots, etc), lines (geom_line, for time series, trend lines, etc) and boxplot (geom_boxplot, for, well, boxplots!). Aesthetic mappings are set with the aes() function and, examples include, position (i.e., on the x and y axes), color ("outside" color), fill ("inside" color), shape (of points), linetype and size. 
 
 
-## Operating Model Conditioning 
+# Operating Model Conditioning 
 
 ### Life history parameters
 
-Use 
+Life history parameters can be loaded from the [fishnets](https:/github.com/fishnets) github repository, a library of multivariate priors for fish population dynamics parameters 
+ 
 ```{r}
 load(url("https://github.com//fishnets//fishnets//blob//master//data//fishbase-web//fishbase-web.RData?raw=True"))
 ```
@@ -87,9 +92,9 @@ lh=apply(lh,2,mean,na.rm=T)
 lh=FLPar(lh)
 ```
 
-Values can be replace with any [better estimates](https://www.researchgate.net/publication/236650425_Ecological_and_economic_trade-offs_in_the_management_of_mixed_fisheries_A_case_study_of_spawning_closures_in_flatfish_fisheries) that may be available.
+Values can be replace with any [better estimates](https://www.researchgate.net/publication/236650425_Ecological_and_economic_trade-offs_in_the_management_of_mixed_fisheries_A_case_study_of_spawning_closures_in_flatfish_fisheries) available.
 
-`lhPar` fills in missing values using life history theory, while quantities like selection-at-age are set using defaults, in this case set to be the same as maturity-at-age.  
+Then `lhPar` fills in missing values using life history theory, while quantities like selection-at-age are set using defaults, in this case set to be the same as maturity-at-age.  
 
 
 ```{r}
@@ -101,7 +106,7 @@ par=lhPar(lh)
 par
 ```
 
-The parameters are then be used by `lhEql` to simulate the equilibrium dynamics by combining the spawner/yield per recruit relationships with a stock recruitment relationship, by creating an [`FLBRP` object](https://www.flr-project.org/doc/Reference_points_for_fisheries_management_with_FLBRP.html)
+The parameters can then be used by `lhEql` to simulate equilibrium dynamics by combining the spawner/yield per recruit relationships with a stock recruitment relationship, by creating an [`FLBRP` object](https://www.flr-project.org/doc/Reference_points_for_fisheries_management_with_FLBRP.html)
 
 ```{r}
 eq=lhEql(par)
@@ -111,7 +116,7 @@ plot(eq)
 
 To model time series the FLBRP object created by lhEql is coerced to an FLStock object and then [projected forward](https://www.flr-project.org/doc/Forecasting_on_the_Medium_Term_for_advice_using_FLasher.html)
 
-For example a fishing time series is simulated that represents a stock that was originally lightly exploited, then effort is increased until the stock is overfished and then fishing pressure was reduced to recover the stock biomass to BMSY.
+For example a fishing time series is simulated that represents a stock that was originally lightly exploited, then effort is increased until the stock is overfished and then fishing pressure was reduced to recover the stock biomass to $B_{MSY}$.
 
 ```{r}
 fbar(eq)=refpts(eq)["msy","harvest"]%*%FLQuant(c(rep(.1,19),
@@ -131,7 +136,8 @@ We call fwd() with the stock, the control object (fbar) and the stock recruitmen
 ```{r}
 om=fwd(om,fbar=fbar(om)[,-1], sr=eq)
 ```
-can change the units here also
+
+can add units 
 ```{r}
 units(catch(om)) = units(discards(om)) = units(landings(om)) = units(stock(om)) = 'tonnes'
 units(catch.n(om)) = units(discards.n(om)) = units(landings.n(om)) = units(stock.n(om)) = '1000'
@@ -154,7 +160,6 @@ om=fwd(om,fbar=fbar(om)[,-1], sr=eq, residuals=srDev)
 ```{r}
 plot(om)
 ```
-
 
 
 ------------------------------
