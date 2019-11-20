@@ -9,7 +9,8 @@ Models are implemented as [FLR](http://www.flr-project.org/) packages and there 
 **Contact:** [Laurence Kell](<laurie@kell.es>) and [Coilin Minto](<coilin.minto@gmit.ie>) 
 
 ------------------------------
-To follow these examples you will have to install a number of packages, either from CRAN or from [FLR](http://www.flr-project.org) where variety of packages and [tutorials](https://www.flr-project.org/doc/) are available.
+
+To use `mydas` you will have to install a number of packages, either from CRAN or from [FLR](http://www.flr-project.org) where variety of packages and [tutorials](https://www.flr-project.org/doc/) are available.
 
 Install FLR 
 ```{r}
@@ -17,7 +18,7 @@ install.packages(c("FLCore","FLFishery","FLasher","FLBRP","mpb","FLife"),
              repos="http://flr-project.org/R")
 ```
 
-`devtools` needs to be installed and then loaded so that the `mydas` package can be installed from this GitHub repository.
+If you want to install the development code then `devtools` needs to be installed and then loaded so that the `mydas` package can be installed from this GitHub repository.
 
 ```{r}
 install.packages("devtools",dependencies=TRUE)
@@ -29,13 +30,14 @@ library(devtools)
 devtools::install_github("lauriekell/mydas-pkg")
 ```
 
-## Load Libraries
+## Libraries
 ```{r}
 library(plyr)
 library(reshape)
 library(ggplot2)
 ```
 
+### FLR libraries
 ```{r}
 library(FLCore)
 library(FLasher)
@@ -44,7 +46,7 @@ library(FLife)
 library(mydas)
 ```
 
-## Plotting
+# Plotting
 ```{r}
 library(ggplotFL)
 ```
