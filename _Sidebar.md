@@ -22,7 +22,7 @@
 
 [mpb](https://github.com/lauriekell/mpb)
 
-[Vignettes](https://github.com/flr/mydas/wiki/mydas-vignettes)
+[Vignettes](https://github.com/flr/mydas/wiki/mydas_vignettes)
 
 # Applications
 
