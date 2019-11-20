@@ -1,6 +1,6 @@
 ![](emff-logo.jpg)
 
-The **MyDas** project simulation tested a range of assessment models and methods in order to establish Maximum Sustainable Yield (MSY), or proxy MSY reference points across the spectrum of data-limited stocks. A main output of the project was the development of two R packages `mydas` and `FLife`, both are implemented as [FLR](http://www.flr-project.org/) packages. 
+The **MyDas** project simulation tested a range of assessment models and methods in order to establish Maximum Sustainable Yield (MSY), or proxy MSY reference points across the spectrum of data-limited stocks. A main output of the project was the development of two R packages `mydas` and `FLife`, both are implemented as [FLR](http://www.flr-project.org/) packages. Example [vignettes](https://3o2y9wugzp1kfxr5hvzgzq-on.drv.tw/MyDas/doc/html/mydas_data.html) are available. 
 
 **MyDas** was funded by the Irish exchequer and [EMFF 2014-2020](https://ec.europa.eu/fisheries/cfp/emff_en) 
 
