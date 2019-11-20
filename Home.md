@@ -10,15 +10,18 @@ Models are implemented as [FLR](http://www.flr-project.org/) packages and there 
 
 ------------------------------
 
-To use `mydas` you will have to install a number of packages, either from CRAN or from [FLR](http://www.flr-project.org) where variety of packages and [tutorials](https://www.flr-project.org/doc/) are available.
+To use `mydas` you will have to install a number of packages, both from [FLR](http://www.flr-project.org) and CRAN 
 
-Install FLR 
+## [FLR](http://www.flr-project.org/) 
+
+A variety of packages and [tutorials](https://www.flr-project.org/doc/) are available.
+
 ```{r}
-install.packages(c("FLCore","FLFishery","FLasher","FLBRP","mpb","FLife"), 
+install.packages(c("FLCore","FLFishery","FLasher","FLBRP","FLife","mydas"), 
              repos="http://flr-project.org/R")
 ```
 
-If you want to install the development code then `devtools` needs to be installed and then loaded so that the `mydas` package can be installed from this GitHub repository.
+If you want to install `mydas` from this GitHub repository then `devtools` needs to be installed
 
 ```{r}
 install.packages("devtools",dependencies=TRUE)
@@ -31,6 +34,7 @@ devtools::install_github("lauriekell/mydas-pkg")
 ```
 
 ## Libraries
+
 ```{r}
 library(plyr)
 library(reshape)
