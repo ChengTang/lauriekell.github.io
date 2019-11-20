@@ -20,9 +20,9 @@
 
 [FLife](https://github.com/flr/FLife)
 
-[mpb](https://github.com/flr/mpb)
+[mpb](https://github.com/lauriekell/mpb)
 
-[Vignettes](https://github.com/flr/FLife/wiki/mydas-vignettes)
+[Vignettes](https://github.com/flr/mydas/wiki/mydas-vignettes)
 
 # Applications
 
