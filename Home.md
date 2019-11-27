@@ -8,7 +8,7 @@ The **MyDas** project simulation tested a range of assessment models and methods
 
 ------------------------------
 
-## FLR
+# Introduction 
 
 The `mydas` package is part of [FLR](http://www.flr-project.org) family of R packages, a collection of tools for quantitative fisheries science, developed in the R language, that facilitates the construction of bio-economic simulation models of fisheries systems. 
 
